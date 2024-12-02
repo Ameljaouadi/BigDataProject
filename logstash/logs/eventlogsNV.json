@@ -1,452 +1,89 @@
-[
-  {
-    "User_ID": "User_148",
-    "Timestamp": "2024-03-08 06:33:46.024594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_261",
-    "Timestamp": "2024-03-08 12:56:46.025594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_146",
-    "Timestamp": "2024-03-07 20:00:46.025594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_675",
-    "Timestamp": "2024-03-07 23:47:46.025594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_555",
-    "Timestamp": "2024-03-07 23:36:46.025594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_396",
-    "Timestamp": "2024-03-07 16:55:46.025594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_12",
-    "Timestamp": "2024-03-08 03:05:46.025594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_85",
-    "Timestamp": "2024-03-07 17:21:46.025594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_72",
-    "Timestamp": "2024-03-07 19:05:46.025594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_433",
-    "Timestamp": "2024-03-08 03:47:46.025594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_424",
-    "Timestamp": "2024-03-08 05:36:46.025594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_354",
-    "Timestamp": "2024-03-08 10:00:46.025594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_535",
-    "Timestamp": "2024-03-07 16:27:46.025594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_678",
-    "Timestamp": "2024-03-08 06:18:46.025594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_108",
-    "Timestamp": "2024-03-07 13:53:46.025594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_998",
-    "Timestamp": "2024-03-08 07:12:46.025594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_460",
-    "Timestamp": "2024-03-08 04:14:46.025594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_494",
-    "Timestamp": "2024-03-07 20:28:46.025594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_602",
-    "Timestamp": "2024-03-08 03:21:46.025594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_917",
-    "Timestamp": "2024-03-07 15:14:46.025594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_561",
-    "Timestamp": "2024-03-08 10:23:46.025594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_588",
-    "Timestamp": "2024-03-07 15:19:46.025594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_914",
-    "Timestamp": "2024-03-08 11:51:46.025594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_777",
-    "Timestamp": "2024-03-08 13:25:46.025594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_548",
-    "Timestamp": "2024-03-07 15:43:46.025594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_620",
-    "Timestamp": "2024-03-08 12:48:46.025594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_772",
-    "Timestamp": "2024-03-08 06:16:46.025594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_671",
-    "Timestamp": "2024-03-07 22:01:46.025594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_628",
-    "Timestamp": "2024-03-07 18:28:46.025594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_398",
-    "Timestamp": "2024-03-08 03:56:46.026594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_47",
-    "Timestamp": "2024-03-08 03:11:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_655",
-    "Timestamp": "2024-03-08 04:57:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_614",
-    "Timestamp": "2024-03-08 07:45:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_970",
-    "Timestamp": "2024-03-08 01:49:46.026594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_229",
-    "Timestamp": "2024-03-07 15:07:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_744",
-    "Timestamp": "2024-03-08 13:07:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_484",
-    "Timestamp": "2024-03-08 03:50:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_735",
-    "Timestamp": "2024-03-08 05:56:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_148",
-    "Timestamp": "2024-03-08 07:56:46.026594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_579",
-    "Timestamp": "2024-03-08 07:04:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_257",
-    "Timestamp": "2024-03-07 16:10:46.026594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_110",
-    "Timestamp": "2024-03-08 05:51:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_124",
-    "Timestamp": "2024-03-08 12:06:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_686",
-    "Timestamp": "2024-03-07 22:16:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_277",
-    "Timestamp": "2024-03-08 06:16:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_229",
-    "Timestamp": "2024-03-08 06:09:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_500",
-    "Timestamp": "2024-03-07 20:32:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_206",
-    "Timestamp": "2024-03-08 03:54:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_272",
-    "Timestamp": "2024-03-07 17:38:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_970",
-    "Timestamp": "2024-03-07 15:37:46.026594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_112",
-    "Timestamp": "2024-03-08 12:40:46.026594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_771",
-    "Timestamp": "2024-03-07 22:34:46.026594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_129",
-    "Timestamp": "2024-03-07 23:25:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_13",
-    "Timestamp": "2024-03-08 09:46:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_837",
-    "Timestamp": "2024-03-08 08:01:46.026594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_546",
-    "Timestamp": "2024-03-07 22:15:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_696",
-    "Timestamp": "2024-03-08 06:28:46.026594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_484",
-    "Timestamp": "2024-03-08 07:40:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_399",
-    "Timestamp": "2024-03-08 08:27:46.026594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_537",
-    "Timestamp": "2024-03-08 07:27:46.026594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_586",
-    "Timestamp": "2024-03-07 18:08:46.027594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_440",
-    "Timestamp": "2024-03-08 11:21:46.027594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_387",
-    "Timestamp": "2024-03-07 17:50:46.027594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_82",
-    "Timestamp": "2024-03-08 01:57:46.027594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_912",
-    "Timestamp": "2024-03-07 16:22:46.027594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_477",
-    "Timestamp": "2024-03-07 18:22:46.027594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_104",
-    "Timestamp": "2024-03-07 15:23:46.027594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_634",
-    "Timestamp": "2024-03-07 22:04:46.027594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_243",
-    "Timestamp": "2024-03-07 19:55:46.027594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_503",
-    "Timestamp": "2024-03-07 23:51:46.027594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_699",
-    "Timestamp": "2024-03-08 03:59:46.027594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_266",
-    "Timestamp": "2024-03-07 19:07:46.027594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_158",
-    "Timestamp": "2024-03-08 12:29:46.027594",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_215",
-    "Timestamp": "2024-03-07 14:31:46.027594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_268",
-    "Timestamp": "2024-03-08 02:50:46.027594",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_871",
-    "Timestamp": "2024-03-08 03:50:46.027594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_92",
-    "Timestamp": "2024-03-08 13:14:46.027594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_127",
-    "Timestamp": "2024-03-08 07:54:46.027594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_832",
-    "Timestamp": "2024-03-07 23:09:46.027594",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_834",
-    "Timestamp": "2024-03-07 20:24:46.027594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_645",
-    "Timestamp": "2024-03-08 10:11:46.027594",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_529",
-    "Timestamp": "2024-03-07 21:11:46.028595",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_116",
-    "Timestamp": "2024-03-08 01:35:46.028595",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_355",
-    "Timestamp": "2024-03-07 14:31:46.028595",
-    "Action": "Login"
-  },
-  {
-    "User_ID": "User_52",
-    "Timestamp": "2024-03-07 23:37:46.028595",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_259",
-    "Timestamp": "2024-03-07 21:22:46.028595",
-    "Action": "Purchase"
-  },
-  {
-    "User_ID": "User_24",
-    "Timestamp": "2024-03-07 16:03:46.028595",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_466",
-    "Timestamp": "2024-03-08 11:50:46.028595",
-    "Action": "Add_to_Cart"
-  },
-  {
-    "User_ID": "User_531",
-    "Timestamp": "2024-03-07 16:27:46.028595",
-    "Action": "Browse"
-  },
-  {
-    "User_ID": "User_225",
-    "Timestamp": "2024-03-08 12:55:46.028595",
-    "Action": "Add_to_Cart"
-  }
-]
+[{"User_ID":"User_148","Timestamp":"2024-03-08 06:33:46.024594","Action":"Add_to_Cart"},
+{"User_ID":"User_261","Timestamp":"2024-03-08 12:56:46.025594","Action":"Purchase"},
+{"User_ID":"User_146","Timestamp":"2024-03-07 20:00:46.025594","Action":"Add_to_Cart"},
+{"User_ID":"User_675","Timestamp":"2024-03-07 23:47:46.025594","Action":"Add_to_Cart"},
+{"User_ID":"User_555","Timestamp":"2024-03-07 23:36:46.025594","Action":"Login"},
+{"User_ID":"User_396","Timestamp":"2024-03-07 16:55:46.025594","Action":"Browse"},
+{"User_ID":"User_12","Timestamp":"2024-03-08 03:05:46.025594","Action":"Login"},
+{"User_ID":"User_85","Timestamp":"2024-03-07 17:21:46.025594","Action":"Browse"},
+{"User_ID":"User_72","Timestamp":"2024-03-07 19:05:46.025594","Action":"Add_to_Cart"},
+{"User_ID":"User_433","Timestamp":"2024-03-08 03:47:46.025594","Action":"Browse"},
+{"User_ID":"User_424","Timestamp":"2024-03-08 05:36:46.025594","Action":"Add_to_Cart"},
+{"User_ID":"User_354","Timestamp":"2024-03-08 10:00:46.025594","Action":"Purchase"},
+{"User_ID":"User_535","Timestamp":"2024-03-07 16:27:46.025594","Action":"Add_to_Cart"},
+{"User_ID":"User_678","Timestamp":"2024-03-08 06:18:46.025594","Action":"Login"},
+{"User_ID":"User_108","Timestamp":"2024-03-07 13:53:46.025594","Action":"Login"},
+{"User_ID":"User_998","Timestamp":"2024-03-08 07:12:46.025594","Action":"Add_to_Cart"},
+{"User_ID":"User_460","Timestamp":"2024-03-08 04:14:46.025594","Action":"Login"},
+{"User_ID":"User_494","Timestamp":"2024-03-07 20:28:46.025594","Action":"Purchase"},
+{"User_ID":"User_602","Timestamp":"2024-03-08 03:21:46.025594","Action":"Purchase"},
+{"User_ID":"User_917","Timestamp":"2024-03-07 15:14:46.025594","Action":"Add_to_Cart"},
+{"User_ID":"User_561","Timestamp":"2024-03-08 10:23:46.025594","Action":"Login"},
+{"User_ID":"User_588","Timestamp":"2024-03-07 15:19:46.025594","Action":"Add_to_Cart"},
+{"User_ID":"User_914","Timestamp":"2024-03-08 11:51:46.025594","Action":"Purchase"},
+{"User_ID":"User_777","Timestamp":"2024-03-08 13:25:46.025594","Action":"Browse"},
+{"User_ID":"User_548","Timestamp":"2024-03-07 15:43:46.025594","Action":"Purchase"},
+{"User_ID":"User_620","Timestamp":"2024-03-08 12:48:46.025594","Action":"Login"},
+{"User_ID":"User_772","Timestamp":"2024-03-08 06:16:46.025594","Action":"Browse"},
+{"User_ID":"User_671","Timestamp":"2024-03-07 22:01:46.025594","Action":"Login"},
+{"User_ID":"User_628","Timestamp":"2024-03-07 18:28:46.025594","Action":"Login"},
+{"User_ID":"User_398","Timestamp":"2024-03-08 03:56:46.026594","Action":"Login"},
+{"User_ID":"User_47","Timestamp":"2024-03-08 03:11:46.026594","Action":"Browse"},
+{"User_ID":"User_655","Timestamp":"2024-03-08 04:57:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_614","Timestamp":"2024-03-08 07:45:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_970","Timestamp":"2024-03-08 01:49:46.026594","Action":"Login"},
+{"User_ID":"User_229","Timestamp":"2024-03-07 15:07:46.026594","Action":"Browse"},
+{"User_ID":"User_744","Timestamp":"2024-03-08 13:07:46.026594","Action":"Browse"},
+{"User_ID":"User_484","Timestamp":"2024-03-08 03:50:46.026594","Action":"Browse"},
+{"User_ID":"User_735","Timestamp":"2024-03-08 05:56:46.026594","Action":"Browse"},
+{"User_ID":"User_148","Timestamp":"2024-03-08 07:56:46.026594","Action":"Purchase"},
+{"User_ID":"User_579","Timestamp":"2024-03-08 07:04:46.026594","Action":"Browse"},
+{"User_ID":"User_257","Timestamp":"2024-03-07 16:10:46.026594","Action":"Purchase"},
+{"User_ID":"User_110","Timestamp":"2024-03-08 05:51:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_124","Timestamp":"2024-03-08 12:06:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_686","Timestamp":"2024-03-07 22:16:46.026594","Action":"Browse"},
+{"User_ID":"User_277","Timestamp":"2024-03-08 06:16:46.026594","Action":"Browse"},
+{"User_ID":"User_229","Timestamp":"2024-03-08 06:09:46.026594","Action":"Browse"},
+{"User_ID":"User_500","Timestamp":"2024-03-07 20:32:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_206","Timestamp":"2024-03-08 03:54:46.026594","Action":"Browse"},
+{"User_ID":"User_272","Timestamp":"2024-03-07 17:38:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_970","Timestamp":"2024-03-07 15:37:46.026594","Action":"Login"},
+{"User_ID":"User_112","Timestamp":"2024-03-08 12:40:46.026594","Action":"Login"},
+{"User_ID":"User_771","Timestamp":"2024-03-07 22:34:46.026594","Action":"Browse"},
+{"User_ID":"User_129","Timestamp":"2024-03-07 23:25:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_13","Timestamp":"2024-03-08 09:46:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_837","Timestamp":"2024-03-08 08:01:46.026594","Action":"Purchase"},
+{"User_ID":"User_546","Timestamp":"2024-03-07 22:15:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_696","Timestamp":"2024-03-08 06:28:46.026594","Action":"Purchase"},
+{"User_ID":"User_484","Timestamp":"2024-03-08 07:40:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_399","Timestamp":"2024-03-08 08:27:46.026594","Action":"Add_to_Cart"},
+{"User_ID":"User_537","Timestamp":"2024-03-08 07:27:46.026594","Action":"Login"},
+{"User_ID":"User_586","Timestamp":"2024-03-07 18:08:46.027594","Action":"Purchase"},
+{"User_ID":"User_440","Timestamp":"2024-03-08 11:21:46.027594","Action":"Browse"},
+{"User_ID":"User_387","Timestamp":"2024-03-07 17:50:46.027594","Action":"Login"},
+{"User_ID":"User_82","Timestamp":"2024-03-08 01:57:46.027594","Action":"Login"},
+{"User_ID":"User_912","Timestamp":"2024-03-07 16:22:46.027594","Action":"Purchase"},
+{"User_ID":"User_477","Timestamp":"2024-03-07 18:22:46.027594","Action":"Purchase"},
+{"User_ID":"User_104","Timestamp":"2024-03-07 15:23:46.027594","Action":"Add_to_Cart"},
+{"User_ID":"User_634","Timestamp":"2024-03-07 22:04:46.027594","Action":"Login"},
+{"User_ID":"User_243","Timestamp":"2024-03-07 19:55:46.027594","Action":"Add_to_Cart"},
+{"User_ID":"User_503","Timestamp":"2024-03-07 23:51:46.027594","Action":"Browse"},
+{"User_ID":"User_699","Timestamp":"2024-03-08 03:59:46.027594","Action":"Login"},
+{"User_ID":"User_266","Timestamp":"2024-03-07 19:07:46.027594","Action":"Browse"},
+{"User_ID":"User_158","Timestamp":"2024-03-08 12:29:46.027594","Action":"Browse"},
+{"User_ID":"User_215","Timestamp":"2024-03-07 14:31:46.027594","Action":"Login"},
+{"User_ID":"User_268","Timestamp":"2024-03-08 02:50:46.027594","Action":"Login"},
+{"User_ID":"User_871","Timestamp":"2024-03-08 03:50:46.027594","Action":"Add_to_Cart"},
+{"User_ID":"User_92","Timestamp":"2024-03-08 13:14:46.027594","Action":"Purchase"},
+{"User_ID":"User_127","Timestamp":"2024-03-08 07:54:46.027594","Action":"Purchase"},
+{"User_ID":"User_832","Timestamp":"2024-03-07 23:09:46.027594","Action":"Purchase"},
+{"User_ID":"User_834","Timestamp":"2024-03-07 20:24:46.027594","Action":"Add_to_Cart"},
+{"User_ID":"User_645","Timestamp":"2024-03-08 10:11:46.027594","Action":"Add_to_Cart"},
+{"User_ID":"User_529","Timestamp":"2024-03-07 21:11:46.028595","Action":"Add_to_Cart"},
+{"User_ID":"User_116","Timestamp":"2024-03-08 01:35:46.028595","Action":"Purchase"},
+{"User_ID":"User_355","Timestamp":"2024-03-07 14:31:46.028595","Action":"Login"},
+{"User_ID":"User_52","Timestamp":"2024-03-07 23:37:46.028595","Action":"Browse"},
+{"User_ID":"User_259","Timestamp":"2024-03-07 21:22:46.028595","Action":"Purchase"},
+{"User_ID":"User_24","Timestamp":"2024-03-07 16:03:46.028595","Action":"Add_to_Cart"},
+{"User_ID":"User_466","Timestamp":"2024-03-08 11:50:46.028595","Action":"Add_to_Cart"},
+{"User_ID":"User_531","Timestamp":"2024-03-07 16:27:46.028595","Action":"Browse"}]

@@ -1,0 +1,94 @@
+/* Applique une marge uniforme et définit un fond clair */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal avec du padding, une bordure arrondie et une ombre */
+.container {
+    margin-left: 25%;
+    margin-top: 7%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 400px;
+}
+
+/* En-tête principal avec une taille de police plus grande */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Style pour les alertes d'erreur */
+.alert {
+    margin-bottom: 20px;
+}
+
+/* Style du formulaire, surtout pour les champs et le bouton */
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control-file {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    display: inline-block;
+}
+
+/* Style du bouton de téléchargement */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Style du bouton Annuler */
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Espacement entre les boutons */
+.ml-2 {
+    margin-left: 10px;
+}
+
+/* Ajout d'un padding aux éléments pour améliorer la lisibilité */
+.alert-danger {
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Ajout d'un espacement entre le formulaire et les éléments suivants */
+form {
+    margin-top: 20px;
+}
