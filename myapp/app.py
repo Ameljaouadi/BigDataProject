@@ -2,15 +2,27 @@ from flask import Flask, render_template, request, redirect, url_for
 import os
 import json
 import csv
-
+import requests
+from elasticsearch import Elasticsearch
 app = Flask(__name__)
 
+es = Elasticsearch(["http://localhost:9200"])
 LOGS_DIR = os.path.join(os.path.dirname(
     os.path.abspath(__file__)), '..', 'logstash', 'logs')
 
 # Vérifier que le dossier 'logs' existe
 if not os.path.exists(LOGS_DIR):
     os.makedirs(LOGS_DIR)
+
+# define kibana url and visualisation Id
+KIBANA_URL = "https://symmetrical-meme-gw996g9jwvx3vpr4-5601.app.github.dev"
+# /  # URL complète de votre instance Kibana
+VISUALISATION_ID = ""
+ALLOWED_EXTENSIONS = {'json', 'csv'}
+
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
 @app.route('/')
@@ -63,11 +75,58 @@ def process_json(filename):
 # Traiter le fichier CSV
 
 
+# def process_csv(filename):
+#     with open(filename, 'r') as file:
+#         reader = csv.reader(file)
+#         for row in reader:
+#             print(f"Ligne CSV: {row}")
+
 def process_csv(filename):
     with open(filename, 'r') as file:
-        reader = csv.reader(file)
+        # Utilisation de DictReader pour lire le CSV en tant que dictionnaire
+        reader = csv.DictReader(file)
         for row in reader:
-            print(f"Ligne CSV: {row}")
+            try:
+                # Indexer chaque ligne dans Elasticsearch
+                es.index(index="logs-index", body=row)
+            except Exception as e:
+                print(f"Erreur lors de l'indexation dans Elasticsearch : {e}")
+        print(f"Fichier CSV importé dans Elasticsearch : {filename}")
+
+    # Rafraîchir l'index pour que les données soient immédiatement disponibles
+    es.indices.refresh(index="logs-index")
+
+
+@app.route('/search', methods=['GET', 'POST'])
+def search_logs():
+    results = []
+    query = ""
+    if request.method == 'POST':
+        query = request.form.get('query')
+        if query:
+            # elasticsearc search query
+            es_query = {
+                "query": {
+                    "multi_match": {
+                        "query": query,
+                        "fields": ["LogLevel", "Message", "ClientIP", "Service", "TimeTaken", "User",
+                                   "WARNING", "RequestID", "Timestamp"]
+                    }
+                }
+
+
+            }
+            response = es.search(index="csv3-2024.12.08", body=es_query)
+            results = response.get('hits', {}).get('hits', [])
+            # Remove duplicates based on 'LineId'
+            results = {result['_source']['LineId']
+                : result for result in results}.values()
+            return render_template('search.html', results=results, query=query)
+
+
+@app.route('/dashbord')
+def dashboard():
+    return render_template('dashbord.html')
 
 
 if __name__ == '__main__':

@@ -92,3 +92,21 @@ button {
 form {
     margin-top: 20px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+}
+
+iframe {
+    border-radius: 8px;
+    overflow: hidden;
+}
