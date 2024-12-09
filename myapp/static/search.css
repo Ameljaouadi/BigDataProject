@@ -1,0 +1,79 @@
+/* ========== Styles Recherche ========== */
+#search-page {
+    padding: 30px;
+
+    /* Fond clair pour la page de recherche */
+    border-radius: 10px;
+
+    /* Ombre subtile pour la boîte */
+}
+
+#search-page h1 {
+    color: #343a40;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#search-page .form-group {
+    margin-bottom: 20px;
+}
+
+#search-page input[type="text"] {
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    /* Assure que les padding sont inclus dans la largeur totale */
+    transition: border-color 0.3s ease;
+    /* Animation pour l'effet au focus */
+}
+
+#search-page input[type="text"]:focus {
+    border-color: #bbc1c7;
+    /* Changer la bordure en bleu au focus */
+    outline: none;
+    /* Supprimer le contour par défaut */
+}
+
+#search-page button {
+    background-color: #5b795a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-page button:hover {
+    background-color: #374637;
+}
+
+#search-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-page .form-group {
+    width: 100%;
+    max-width: 500px;
+    /* Limiter la largeur de l'input et du bouton */
+}
+
+#search-page button:disabled {
+    background-color: #cccccc;
+    /* Bouton gris lorsqu'il est désactivé */
+    cursor: not-allowed;
+}
+
+#search-page input[type="text"]::placeholder {
+    color: #6c757d;
+    /* Couleur du texte du placeholder */
+    font-style: italic;
+}

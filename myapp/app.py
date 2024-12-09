@@ -109,7 +109,7 @@ def search_logs():
                 "query": {
                     "multi_match": {
                         "query": query,
-                        "fields": ["LogLevel", "Message", "ClientIP", "Service", "TimeTaken", "User",
+                        "fields": ["LogLevel", "Message", "ClientIP", "Service", "TimeTaken", "User_ID",
                                    "WARNING", "RequestID", "Timestamp"]
                     }
                 }
@@ -119,14 +119,18 @@ def search_logs():
             response = es.search(index="csv3-2024.12.08", body=es_query)
             results = response.get('hits', {}).get('hits', [])
             # Remove duplicates based on 'LineId'
-            results = {result['_source']['LineId']
-                : result for result in results}.values()
-            return render_template('search.html', results=results, query=query)
+            results = {result['_source']['LineId']                       : result for result in results}.values()
+    return render_template('search.html', results=results, query=query)
 
 
 @app.route('/dashbord')
 def dashboard():
     return render_template('dashbord.html')
+
+
+@app.route('/navbar')
+def navbar():
+    return render_template('navbar.html')
 
 
 if __name__ == '__main__':

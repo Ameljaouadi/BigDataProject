@@ -10,12 +10,29 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Dashboard</h1>
-        <iframe
-            src="https://symmetrical-meme-gw996g9jwvx3vpr4-5601.app.github.dev/app/dashboards#/view/21eb0ef0-b5ac-11ef-bfbe-d5c32bb9ba33?_g=(filters:!(),refreshInterval:(pause:!t,value:5000),time:(from:now-1y%2Fd,to:now))"
-            width="500px" height="620px" style="border: 1px solid #ccc;"></iframe>
+
+
+    {% include 'navbar.html' %}
+
+
+    <div id="dashboard-page">
+
+        <div class="container">
+
+
+            <h1 class="text-center">Dashboard CSV</h1>
+            <iframe
+                src="https://symmetrical-meme-gw996g9jwvx3vpr4-5601.app.github.dev/app/dashboards#/view/21eb0ef0-b5ac-11ef-bfbe-d5c32bb9ba33?_g=(filters:!(),refreshInterval:(pause:!t,value:5000),time:(from:now-1y%2Fd,to:now))"
+                width="900px" height="600px" style="border: 1px solid #ccc;"></iframe>
+        </div>
+        <div class="container mt-5">
+            <h1 class="text-center">Dashboard JSON</h1>
+            <iframe
+                src="https://symmetrical-meme-gw996g9jwvx3vpr4-5601.app.github.dev/app/dashboards#/view/3352df40-b676-11ef-b072-53e48316a7c1?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-1y%2Fd,to:now))"
+                width="900px" height="620px" style="border: 1px solid #ccc;"></iframe>
+        </div>
     </div>
 </body>
+
 
 </html>

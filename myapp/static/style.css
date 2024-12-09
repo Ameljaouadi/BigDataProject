@@ -1,4 +1,4 @@
-/* Applique une marge uniforme et définit un fond clair */
+/* ========== Styles Communs ========== */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -6,107 +6,202 @@ body {
     padding: 0;
 }
 
-/* Container principal avec du padding, une bordure arrondie et une ombre */
-.container {
-    margin-left: 25%;
-    margin-top: 7%;
-    max-width: 600px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 600px;
-    height: 400px;
-}
-
-/* En-tête principal avec une taille de police plus grande */
 h1 {
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
     margin-bottom: 30px;
     color: #333;
 }
 
-/* Style pour les alertes d'erreur */
-.alert {
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+
+
+/* ========== Styles Dashboard ========== */
+#dashboard-page h1 {
+    color: #5c5f63;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#dashboard-page {
+    margin-bottom: 15%;
+}
+
+#dashboard-page iframe {
+    width: 800px;
+    height: 60vh;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    #dashboard-page iframe {
+        height: 45vh;
+        /* Réduire la hauteur des iframes sur les petits écrans */
+    }
+}
+
+
+/* ========== Styles Recherche ========== */
+#search-page h1 {
+    color: #343a40;
+    font-size: 26px;
+}
+
+#search-page input[type="text"] {
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
-/* Style du formulaire, surtout pour les champs et le bouton */
-.form-group label {
+#search-page button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-size: 16px;
-    font-weight: bold;
-    color: #333;
+    cursor: pointer;
 }
 
-.form-control-file {
-    border: 1px solid #ced4da;
+#search-page button:hover {
+    background-color: #0056b3;
+}
+
+/* ========== Styles Upload Logs ========== */
+#upload-logs-page h1 {
+    color: #28a745;
+    font-size: 26px;
+}
+
+#upload-logs-page .form-control-file {
+    border: 1px solid #28a745;
     padding: 10px;
-    width: 100%;
+    border-radius: 5px;
     margin-top: 10px;
 }
 
-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 48%;
-    display: inline-block;
-}
-
-/* Style du bouton de téléchargement */
-.btn-primary {
-    background-color: #007bff;
+#upload-logs-page .btn-primary {
+    background-color: #28a745;
     border: none;
     color: white;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
+#upload-logs-page .btn-primary:hover {
+    background-color: #218838;
 }
 
-/* Style du bouton Annuler */
-.btn-secondary {
+#upload-logs-page .btn-secondary {
     background-color: #6c757d;
     border: none;
     color: white;
 }
 
-.btn-secondary:hover {
+#upload-logs-page .btn-secondary:hover {
     background-color: #5a6268;
 }
 
-/* Espacement entre les boutons */
-.ml-2 {
-    margin-left: 10px;
-}
 
-/* Ajout d'un padding aux éléments pour améliorer la lisibilité */
-.alert-danger {
-    padding: 15px;
-    font-size: 16px;
-}
 
-/* Ajout d'un espacement entre le formulaire et les éléments suivants */
-form {
-    margin-top: 20px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
+/* ========== Page Upload Logs ========== */
+#upload-logs-page h1 {
+    color: #343a40;
+    /* Titre sombre */
+    font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .container {
-    max-width: 800px;
+    background-color: #f9f9f9;
+    /* Couleur de fond claire pour la page */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
 }
 
-iframe {
+.form-group label {
+    font-size: 1.1rem;
+    color: #343a40;
+}
+
+.form-control-file {
+    border: 1px solid #ced4da;
+    /* Bordure subtile */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    /* Couleur verte */
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    /* Couleur de survol plus foncée */
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    /* Couleur de survol gris */
+}
+
+.alert {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+/* ========== Animation sur les boutons ========== */
+.btn-primary,
+.btn-secondary {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-3px);
+    /* Animation survol */
+}
+
+/* ========== Formulaire ========== */
+form {
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 8px;
-    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="file"] {
+    background-color: #f8f9fa;
 }

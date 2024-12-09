@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/search.css">
 </head>
 
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Recherche de Logs</h1>
-        <form>
-            <div class="form-group">
-                <label for="searchQuery">Rechercher dans les logs</label>
-                <input type="text" class="form-control" id="searchQuery" placeholder="Entrez un mot-clé ou une date">
-            </div>
-            <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Rechercher</button>
-        </form>
+    {% include 'navbar.html' %}
+    <div id="search-page">
+
+
+        <div class="container">
+            <h1 class="text-center">Rechercher des Logs</h1>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Entrez un mot-clé ou une date">
+                    <button type="submit">Rechercher</button>
+            </form>
+        </div>
     </div>
 </body>
 
