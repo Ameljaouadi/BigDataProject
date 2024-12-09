@@ -72,6 +72,14 @@ def process_json(filename):
         data = json.load(file)
         print(f"Fichier JSON traité: {filename}")
 
+        # Indexer le fichier JSON dans Elasticsearch
+        es.index(index="logs-index", body=data)
+        
+        # Rafraîchir l'index pour que les données soient immédiatement disponibles
+        es.indices.refresh(index="logs-index")
+        print("Index rafraîchi dans Elasticsearch.")
+
+
 # Traiter le fichier CSV
 
 
@@ -95,6 +103,7 @@ def process_csv(filename):
 
     # Rafraîchir l'index pour que les données soient immédiatement disponibles
     es.indices.refresh(index="logs-index")
+    print("Index rafraîchi dans Elasticsearch.")
 
 
 @app.route('/search', methods=['GET', 'POST'])
@@ -119,7 +128,8 @@ def search_logs():
             response = es.search(index="csv3-2024.12.08", body=es_query)
             results = response.get('hits', {}).get('hits', [])
             # Remove duplicates based on 'LineId'
-            results = {result['_source']['LineId']                       : result for result in results}.values()
+            results = {result['_source']['LineId']
+                : result for result in results}.values()
     return render_template('search.html', results=results, query=query)
 
 
