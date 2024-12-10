@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/search.css">
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div id="search-page">
+
+
+        <div class="container-2">
+            <h1 class="text-center">Rechercher des Logs</h1>
+            <form method="POST" class="search-input">
+                <input type="text" name="query" placeholder="Entrez votre recherche..." value="{{ query }}">
+                <button type="submit">Rechercher</button>
+            </form>
+        </div>
+    </div>
+    <div class="container mt-4">
+     
+
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>User_ID</th>
+                    <th>Timestamp</th>
+                    <th>Action</th>
+                   
+                </tr>
+
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ result['_source']['User_ID'] }}</td>
+
+                    <td>{{ result['_source']['Timestamp'] }}</td>
+                    <td>{{ result['_source']['Action'] }}</td>
+                   
+
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+        
+        
+
+    </div>
+</body>
+
+</html>

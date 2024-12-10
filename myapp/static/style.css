@@ -6,17 +6,12 @@ body {
     padding: 0;
 }
 
-h1 {
-    font-size: 26px;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
+
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
+    width: 1050px;
+    margin: 25px auto;
+    padding: 15px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -28,8 +23,8 @@ h1 {
 /* ========== Styles Dashboard ========== */
 #dashboard-page h1 {
     color: #5c5f63;
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 25px;
+    margin-bottom: 45px;
 }
 
 #dashboard-page {
@@ -37,9 +32,9 @@ h1 {
 }
 
 #dashboard-page iframe {
-    width: 800px;
-    height: 60vh;
-    border: 2px solid #007bff;
+    width: 1000px;
+    height: 70vh;
+    border: 1px solid #007bff;
     border-radius: 8px;
 }
 
@@ -124,7 +119,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.container {
+.container-2 {
     background-color: #f9f9f9;
     /* Couleur de fond claire pour la page */
     padding: 40px;

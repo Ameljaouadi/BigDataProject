@@ -15,7 +15,7 @@ if not os.path.exists(LOGS_DIR):
     os.makedirs(LOGS_DIR)
 
 # define kibana url and visualisation Id
-KIBANA_URL = "https://symmetrical-meme-gw996g9jwvx3vpr4-5601.app.github.dev"
+KIBANA_URL = "https://5601-cs-71323680741-default.cs-europe-west1-haha.cloudshell.dev/"
 # /  # URL complète de votre instance Kibana
 VISUALISATION_ID = ""
 ALLOWED_EXTENSIONS = {'json', 'csv'}
@@ -67,17 +67,12 @@ def allowed_file(filename):
 # Traiter le fichier JSON
 
 
-def process_json(filename):
+def process_csv(filename):
     with open(filename, 'r') as file:
-        data = json.load(file)
-        print(f"Fichier JSON traité: {filename}")
-
-        # Indexer le fichier JSON dans Elasticsearch
-        es.index(index="logs-index", body=data)
-        
-        # Rafraîchir l'index pour que les données soient immédiatement disponibles
-        es.indices.refresh(index="logs-index")
-        print("Index rafraîchi dans Elasticsearch.")
+        reader = csv.DictReader(file)
+        for row in reader:
+            es.index(index="csv3-2024.12.10", body=row)
+        es.indices.refresh(index="csv3-2024.12.10")
 
 
 # Traiter le fichier CSV
@@ -89,24 +84,14 @@ def process_json(filename):
 #         for row in reader:
 #             print(f"Ligne CSV: {row}")
 
-def process_csv(filename):
+def process_json(filename):
     with open(filename, 'r') as file:
-        # Utilisation de DictReader pour lire le CSV en tant que dictionnaire
-        reader = csv.DictReader(file)
-        for row in reader:
-            try:
-                # Indexer chaque ligne dans Elasticsearch
-                es.index(index="logs-index", body=row)
-            except Exception as e:
-                print(f"Erreur lors de l'indexation dans Elasticsearch : {e}")
-        print(f"Fichier CSV importé dans Elasticsearch : {filename}")
-
-    # Rafraîchir l'index pour que les données soient immédiatement disponibles
-    es.indices.refresh(index="logs-index")
-    print("Index rafraîchi dans Elasticsearch.")
+        data = json.load(file)
+        es.index(index="json3-2024.12.10", body=data)
+        es.indices.refresh(index="json3-2024.12.10")
 
 
-@app.route('/search', methods=['GET', 'POST'])
+@app.route('/searchcsv', methods=['GET', 'POST'])
 def search_logs():
     results = []
     query = ""
@@ -118,19 +103,38 @@ def search_logs():
                 "query": {
                     "multi_match": {
                         "query": query,
-                        "fields": ["LogLevel", "Message", "ClientIP", "Service", "TimeTaken", "User_ID",
-                                   "WARNING", "RequestID", "Timestamp"]
+                        "fields": ["Timestamp","LogLevel","Service", "Message","RequestID","User", "ClientIP", "TimeTaken"]
                     }
                 }
 
 
             }
-            response = es.search(index="csv3-2024.12.08", body=es_query)
+            response = es.search(index="csv3-2024.12.10", body=es_query)
             results = response.get('hits', {}).get('hits', [])
-            # Remove duplicates based on 'LineId'
-            results = {result['_source']['LineId']
-                : result for result in results}.values()
-    return render_template('search.html', results=results, query=query)
+          
+           
+    return render_template('searchcsv.html', results=results, query=query)
+@app.route('/searchjson', methods=['GET', 'POST'])
+def search_json():
+    results = []
+    query = ""
+    if request.method == 'POST':
+        query = request.form.get('query')
+        if query:
+            # Requête de recherche pour Elasticsearch
+            es_query = {
+                "query": {
+                    "multi_match": {
+                        "query": query,
+                        "fields": ["User_ID", "Timestamp", "Action"]
+                    }
+                }
+            }
+            response = es.search(index="json3-2024.12.10", body=es_query)
+            results = response.get('hits', {}).get('hits', [])
+    return render_template('searchjson.html', results=results, query=query)
+
+
 
 
 @app.route('/dashbord')

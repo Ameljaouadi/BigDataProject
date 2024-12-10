@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/search.css">
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div id="search-page">
+
+
+        <div class="container-2">
+            <h1 class="text-center">Rechercher des Logs</h1>
+            <form method="POST">
+                <div class="form-group">
+                    <input type="text" name="query" class="form-control" value="{{query}}"  placeholder="Entrez un mot-clé ou une date">
+                    <button type="submit">Rechercher</button>
+            </form>
+        </div>
+    </div>
+    <div class="container mt-4">
+     
+
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+
+                    <th>Timestamp</th>
+                    <th>LogLevel</th>
+                    <th>Service</th>
+                    <th>Message</th>
+                    <th>RequestID</th>
+                    <th>User</th>
+                    <th>ClientIP</th>
+                    <th>TimeTaken</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ result['_source']['Timestamp'] }}</td>
+                    <td>{{ result['_source']['LogLevel'] }}</td>
+                    <td>{{ result['_source']['Service'] }}</td>
+                    <td>{{ result['_source']['Message'] }}</td>
+                    <td>{{ result['_source']['RequestID'] }}</td>
+                    <td>{{ result['_source']['User'] }}</td>
+                    <td>{{ result['_source']['ClientIP'] }}</td>
+                    <td>{{ result['_source']['TimeTaken'] }}</td>
+
+
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+        
+        
+
+    </div>
+</body>
+
+</html>
